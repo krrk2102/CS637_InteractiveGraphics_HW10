@@ -1,0 +1,53 @@
+This is extra credit assignment for CS 637, by Shangqi Wu.
+
+This assignment is developed on Windows, and tested compilable on virtual machine provided by this course.
+
+Compile and Run:
+Please use the makefile provided and type "make" in terminal, and the executable file will be named "hw10". 
+To run this program, please typr "./hw10" in terminal. 
+There is also a "make clean" option to delete the executable file.
+
+Functionality:
+Satisfied - Create a 3-link "robot" that rotates around a base and its two other joint angles.
+Satisfied - The user should be able to choose (via a button click) which joint to modify,
+Satisfied - The chosen joint angle should then be modifiable via user input (via keyboard).
+
+Default view:
+The 3-link object are made of blue plastic, pointing up(0, 1, 0). 
+Camera locates at (0, 0, 1) in the front of the object, with perspective view and phong shading. 
+There are 2 light sources, a brighter one locates just behind the camera and moves with camera, while a darker one locates at right-front-top of the object, which is able to move by keyboard control. 
+Initially camera is still, while you can choose to start or stop camera count-clockwise rotation by right-click menu. 
+
+Keyboard control:
+Robot arm motion:
+'1': Make base as current modifiable component. 
+'2': Make lower arm as current modifiable component. 
+'2': Make upper arm as current modifiable component. 
+'i': Rotate current component around X-axis like pushing it into screen.
+'k': Rotate current component around X-axis like pulling it out of screen. 
+'j': Rotate currenr component around Z-axis like turning it to left.
+'l': Rotate current component around Z-axis like turning it to right.
+'u': Rotate current component around Y-axis like rolling it clockwise.
+'o': Rotate current component around Y-axis like rolling it counter-clockwise.
+Camera position:
+'w': Increasing camera height.
+'s': Decreasing camera height.
+'a': Incresing camera radius, the object looks smaller under perspective projection.
+'d': Decreasing camera radius, the object looks larger under perspective projection.
+'e': Increase camera counter-clockwise rotation speed.
+'q': Decrease camera clockwise rotation speed.
+'x': Allows you rotate camera counter-clockwise by one step. 
+'z': Allows you rotate camera clockwise by one step. 
+Light source 2 position:
+'t': Increasing light height.
+'g': Decreasing light height.
+'h': Increasing light orbit radius, the light source becomes farther to the object.
+'f': Decreasing light orbit radius, the loght source becomes closer to the object. 
+'y': Rotate light 2 counter-clockwise.
+'r': Rotate light 2 clockwise.
+'v': Make light 2 rotate 2x faster.
+'c': Make light 2 rotate half speed.
+
+Menu instruction:
+There are 2 menus, one for camera rotation control, the other for projection control.
+You can choose to start/stop camera rotation, and also switch between perspective and parallel projection. 
